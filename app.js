@@ -18,7 +18,7 @@ bot.dialog('/', dialog);
 dialog.matches('ServerUp', [function(session, data, next){
     session.send("No");
 }]);
-dialog.onDefault(botbuilder.DialogAction.send('Wut? :thinking-face:'));
+dialog.onDefault(botbuilder.DialogAction.send('Wut? thinking_face:'));
 
 // Creating server
 var server = restify.createServer();

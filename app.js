@@ -18,6 +18,9 @@ bot.dialog('/', dialog);
 dialog.matches('ServerUp', [function(session, data, next){
     session.send("No");
 }]);
+dialog.matches('CurrentTime', [function(session, data, next){
+    session.send(new Date().toTimeString());
+}]);
 dialog.onDefault(botbuilder.DialogAction.send('Wut? :thinking_face:'));
 
 // Creating server

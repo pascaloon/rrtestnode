@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "botbuilder": "^3.4.4",
+    "node-rest-client": "^2.0.1",
     "restify": "^4.3.0"
   }
 }
